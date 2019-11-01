@@ -1,0 +1,95 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<link rel="SHORTCUT ICON" href="img/single.png">
+<title>IbisLinux | Lightweight and Elegant Linux® distribution</title>
+<!-- Meta tag looking for mobile devices -->
+<meta name="viewport" content="initial-scale=1.5">
+<meta name="theme-color" content="#232323">
+
+<!-- Good information about this page -->
+<meta name="description" content="Lightweight and Elegant Linux® distribution">
+<meta name="keywords" content="Ibis, IbisLinux, Linux Distro">
+<meta name="author" content="Tanio">
+
+<!-- Facebook, Linkedin, Reddit and many others Open Graph -->
+<meta property="og:site_name" content="IbisLinux" />
+<meta property="og:title" content="IbisLinux | Lightweight and Elegant Linux® distribution" />
+<meta property="og:type" content="website" />
+<meta property="og:description" content="IbisLinux | Lightweight and Elegant Linux® distribution" />
+<meta property="og:url" content="https://ibislinux.org" />
+<meta property="og:image:width" content="600" />
+<meta property="og:image:height" content="315" />
+<meta property="og:image" content="img/cover.jpg" />
+<meta property="og:locale" content="en" />
+<meta property="og:locale:alternate" content="pt_BR" />
+<meta property="fb:page_id" content="" />
+
+<!-- Style and scripts files -->
+<link rel="stylesheet" type="text/css" href="css/bootstrap.css">
+<link rel="stylesheet" href="css/arta.css">
+<script src="js/highlight.min.js"></script>
+<script src="http://ajax.aspnetcdn.com/ajax/jQuery/jquery-1.11.1.min.js"></script>
+
+<style type="text/css">
+img {
+    height: auto;
+    max-width: 640px;
+    -moz-transition: all 1s;
+    -ms-transition: all 1s;
+    -o-transition: all 1s;
+    -webkit-transition: all 1s;
+    transition: all 1s;
+}
+img.expanded {
+    max-width: 2000px;
+}
+</style>
+</head>
+<body>
+<div class="container col-md-10">
+<img src="img/wide.png" class="img-fluid mx-auto d-block" width="70%">
+<hr style="border-top: dotted 1px;margin-bottom:1px;" />
+<nav class="navbar navbar-dark bg-dark border-0 text-center">
+<span class="navbar-text mx-auto p">
+    <a href="./index.php" class="mr-2">Home</a>
+    <a href="https://blog.ibislinux.org/" class="mr-2">Blog</a>
+    <!-- <a href="about/" class="mr-2">About</a> -->
+    <a href="./about.php" class="mr-2">About</a>
+    <a href="./contact.php" class="mr-2">Contact</a>
+    <a href="./team.php" class="mr-2">Team</a>
+    <a href="./post.php" class="mr-2">Posts</a>
+    <a href="./get-ibislinux.php">Download</a>
+  </span>
+</nav>
+<hr style="border-top: dotted 1px;margin-top:1px;" />
+
+<div class="content">
+<h3 id="posts">dev@ibislinux:~$ history | grep "post"</h3>
+<li>Menghubungkan Ibislinux dengan WiFi :: <a href="https://blog.ibislinux.org/koneksi-wifi-ibislinux/">Readmore</a></li>
+<li>Install Ibislinux via Rsync :: <a href="https://blog.ibislinux.org/install-ibislinux/">Readmore</a></li>
+<li>Pengenalan Ibislinux :: <a href="https://ibislinux.org/pengenalan.php">Readmore</a></li>
+<p>We will continue to update about ibislinux tutorials on this web :)</p>
+<hr style="border-top: dotted 1px;margin-bottom: 5px;" />
+<footer class="text-center">
+© 2018 | IbisLinux
+</footer>
+</div>
+<script>
+$(document).ready(function() {
+    var imageLinks = $('a[href$=".png"], a[href$=".jpg"], a[href$=".gif"], a[href$=".bmp"]');
+    if (imageLinks.children('img').length) {
+        imageLinks.children('img').each(function() {
+            var currentTitle = $(this).attr('title');
+            $(this).attr('title', currentTitle + ' (click to enlarge image)');
+        });
+        imageLinks.click(function(e) {
+            e.preventDefault();
+            $(this).children('img').toggleClass('expanded');
+        });
+    }
+});
+</script>
+<script src="js/custom.js"></script>
+</body>
+</html>

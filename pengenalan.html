@@ -1,0 +1,113 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<link rel="SHORTCUT ICON" href="img/single.png">
+<title>IbisLinux | Lightweight and Elegant Linux® distribution</title>
+<!-- Meta tag looking for mobile devices -->
+<meta name="viewport" content="initial-scale=1.5">
+<meta name="theme-color" content="#232323">
+
+<!-- Good information about this page -->
+<meta name="description" content="Lightweight and Elegant Linux® distribution">
+<meta name="keywords" content="Ibis, IbisLinux, Linux Distro">
+<meta name="author" content="Tanio">
+
+<!-- Facebook, Linkedin, Reddit and many others Open Graph -->
+<meta property="og:site_name" content="IbisLinux" />
+<meta property="og:title" content="IbisLinux | Lightweight and Elegant Linux® distribution" />
+<meta property="og:type" content="website" />
+<meta property="og:description" content="IbisLinux | Lightweight and Elegant Linux® distribution" />
+<meta property="og:url" content="https://ibislinux.org" />
+<meta property="og:image:width" content="600" />
+<meta property="og:image:height" content="315" />
+<meta property="og:image" content="img/cover.jpg" />
+<meta property="og:locale" content="en" />
+<meta property="og:locale:alternate" content="pt_BR" />
+<meta property="fb:page_id" content="" />
+
+<!-- Style and scripts files -->
+<link rel="stylesheet" type="text/css" href="css/bootstrap.css">
+<link rel="stylesheet" href="css/arta.css">
+<script src="js/highlight.min.js"></script>
+<script src="http://ajax.aspnetcdn.com/ajax/jQuery/jquery-1.11.1.min.js"></script>
+
+<style type="text/css">
+img {
+    height: auto;
+    max-width: 640px;
+    -moz-transition: all 1s;
+    -ms-transition: all 1s;
+    -o-transition: all 1s;
+    -webkit-transition: all 1s;
+    transition: all 1s;
+}
+img.expanded {
+    max-width: 2000px;
+}
+</style>
+</head>
+<body>
+<div class="container col-md-10">
+<img src="img/wide.png" class="img-fluid mx-auto d-block" width="70%">
+<hr style="border-top: dotted 1px;margin-bottom:1px;" />
+<nav class="navbar navbar-dark bg-dark border-0 text-center">
+<span class="navbar-text mx-auto p">
+    <a href="./index.php" class="mr-2">Home</a>
+    <a href="https://blog.ibislinux.org/" class="mr-2">Blog</a>
+    <!-- <a href="about/" class="mr-2">About</a> -->
+    <a href="./about.php" class="mr-2">About</a>
+    <a href="./contact.php" class="mr-2">Contact</a>
+    <a href="./team.php" class="mr-2">Team</a>
+    <a href="./post.php" class="mr-2">Posts</a>
+    <a href="./get-ibislinux.php">Download</a>
+  </span>
+</nav>
+<hr style="border-top: dotted 1px;margin-top:1px;" />
+
+<div class="content">
+<p>Sebagaimana namanya, ibislinux mempunyai sejarah nama dimana diambil dari nama ibis, ibis yaitu nama latin dari burung hantu. Mengapa si yang di ambil burung hantu, bukan burung garuda maupun burung elang yang notabene lebih gagah?</p>
+<p>Burung Hantu merupakan simbol ilmu pengetahuan, kami menggunakan simbol burung hantu (ibis) karena kami semua memang masih belajar, kami semua haus akan ilmu pengetahuan yang memang tidak ada batasnya selain tuhan.</p>
+<p>IbisLinux adalah distribusi GNU / Linux berdasarkan Linux From Scratch, hasil karya dari sebuah ketertarikan pada open-source, dimana pengguna bisa mempelajari dari awal tentang aplikasi yang ada di dalamnya. Dengan penggunaan yang mudah serta ringan, IbisLinux lebih dikhususkan untuk device x64 Low End, karena keringanan nya, RAM 2GB pun bisa menjalankan Ibis Linux.</p>
+<p>Pertanyaan yang umum atau sering kami temukan:</p>
+<ol>
+<li>Turunan apa ibislinux?</li>
+<li>Distro apakah ini?</li>
+<li>Kok hanya console, doang ndak ada GUI nya?</li>
+<li>Belum bisa di install ya?</li>
+</ol>
+<p>Pertanyaan tersebut akan kami jawab:</p>
+<ol>
+<li>Turunan apa ibislinux?</li>
+<p>ibislinux adalah distro yang di buat dengan basic linuxfromscratch dimana semua aplikasi di kompilasi secama manual tanpa menggunakan paket manajer. Apakah selanjutnya ibislinux akan menggunakan paket manager? kami dari developer rencananya akan menggunakan scratchpkg.</p>
+<li>Distro apakah ini?</li>
+<p>ibislinux adalah simple penetration distro atau yang sering dikenal distro yang di gunakan untuk kegiatan penetration testing, bisa juga di gunakan untuk penggunaan sehari hari</p>
+<li>Kok hanya console, doang ndak ada GUI nya?</li>
+<p>untuk masuk ke mode GUI bisa, gunakan perintah <em><strong>startx </strong></em>di sana kalian bisa merasakan keringanan dari ibislinux</p>
+<li>Belum bisa di install ya?</li>
+<p>Saat ini belum bisa di install, masih dalam mode live cd, misalkan memang mau di install harus menggunakan rsync
+</ol>
+<p>Cukup sampai sini pengenalan ibislinux, untuk pengenalan lebih dalam, nanti akan ada artikel nya di blog ini<br />
+Sekian Terima Kasih</p>
+<hr style="border-top: dotted 1px;margin-bottom: 5px;" />
+<footer class="text-center">
+© 2018 | IbisLinux
+</footer>
+</div>
+<script>
+$(document).ready(function() {
+    var imageLinks = $('a[href$=".png"], a[href$=".jpg"], a[href$=".gif"], a[href$=".bmp"]');
+    if (imageLinks.children('img').length) {
+        imageLinks.children('img').each(function() {
+            var currentTitle = $(this).attr('title');
+            $(this).attr('title', currentTitle + ' (click to enlarge image)');
+        });
+        imageLinks.click(function(e) {
+            e.preventDefault();
+            $(this).children('img').toggleClass('expanded');
+        });
+    }
+});
+</script>
+<script src="js/custom.js"></script>
+</body>
+</html>
